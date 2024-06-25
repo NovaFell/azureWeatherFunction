@@ -11,7 +11,7 @@ module.exports = async function (context, req) {
     }
 
     const apiKey = process.env.OPENWEATHERMAP_API_KEY;
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=impoerial`;
 
     try {
         const response = await fetch(url);
